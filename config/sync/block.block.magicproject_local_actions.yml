@@ -1,0 +1,20 @@
+uuid: 7d900b77-1f6e-45bc-94ba-e0f13284cea3
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - magicproject
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: magicproject_local_actions
+theme: magicproject
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  provider: core
+  label_display: '0'
+visibility: {  }

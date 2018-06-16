@@ -1,0 +1,22 @@
+uuid: 84c4ae50-dd82-48c3-bc30-ba88e74a7dda
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - magicproject
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: magicproject_breadcrumbs
+theme: magicproject
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Fils d''Ariane'
+  provider: system
+  label_display: '0'
+visibility: {  }

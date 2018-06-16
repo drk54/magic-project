@@ -1,0 +1,22 @@
+uuid: 6ccd25c4-db06-4777-9532-3ecaa6fd2a31
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - magicproject
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: magicproject_search
+theme: magicproject
+region: header
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Rechercher
+  provider: search
+  label_display: visible
+visibility: {  }

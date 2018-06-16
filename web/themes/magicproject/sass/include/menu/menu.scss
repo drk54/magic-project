@@ -1,0 +1,26 @@
+@import "../common/color";
+.menu{
+
+  &__main{
+  }
+
+  &__menu{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li{
+      &:hover{
+        background-color: $color_red;
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+      a{
+        color: black;
+      }
+    }
+  }
+
+}

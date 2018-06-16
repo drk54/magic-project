@@ -1,1 +1,8 @@
-@import 'include/page';
+//common
+@import "include/common/common";
+
+//menu
+@import 'include/page/page';
+
+//page
+@import 'include/menu/menu';

@@ -48,7 +48,7 @@
 <div class="container page">
 
     <div class="row">
-        <header role="banner">
+        <header>
             {{ page.header }}
         </header>
     </div>
@@ -58,13 +58,21 @@
     <div class="row">
 
         <div class="col-md-3">
-            <img src="{{ logopath }}" alt="logo">
-            <h3>P H O T O G R A P H E</h3>
-            <h3>C A M E R A M A N</h3>
-            {{ page_title }}
+            <div class="sidebar">
+                <div class="wrapper">
+                    <a href="/">
+                        <img src="{{ logopath }}" alt="logo" class="logo">
+                    </a>
+                    <h3 class="label">P H O T O G R A P H E</h3>
+                    <h3 class="label">C A M E R A M A N</h3>
+                    {% if not is_front %}
+                        {{ page.content.magicproject_page_title}}
+                    {% endif %}
+                </div>
+            </div>
         </div>
         <div class="col-md-9">
-            {{ page.content }}
+            {{ page.content.magicproject_content}}
         </div>
 
     </div>

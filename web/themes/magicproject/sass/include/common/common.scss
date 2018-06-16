@@ -1,0 +1,25 @@
+.sidebar{
+  height: 100%;
+  position: relative;
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+  }
+  .logo{
+    max-width: 100%;
+  }
+  .page_title{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+}
+
+.label{
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+uuid: 6d48b8ca-9de2-4d96-bf9b-22ea958f6c3f
+name: Magic-Project
+mail: contact@magic-project.net
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

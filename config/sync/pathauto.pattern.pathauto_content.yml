@@ -1,0 +1,22 @@
+uuid: fa7483ec-1581-4c3d-8b5e-ab81a93924cb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: pathauto_content
+label: 'page title'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  781e6606-55d7-48fd-801e-92e4c0e2369a:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 781e6606-55d7-48fd-801e-92e4c0e2369a
+selection_logic: and
+weight: -5
+relationships: {  }

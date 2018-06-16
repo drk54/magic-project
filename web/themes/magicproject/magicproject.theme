@@ -44,3 +44,7 @@ function magicproject_preprocess_menu(&$variables, $hook) {
 //        }
 //    }
 }
+
+function magicproject_preprocess_page(&$variables){
+    $variables['logopath'] = '/' . drupal_get_path('theme','magicproject') . '/logo.jpg';
+}

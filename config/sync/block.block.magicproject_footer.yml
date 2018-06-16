@@ -1,0 +1,26 @@
+uuid: 1cb8026e-767d-4d21-a712-86a8bdf16570
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - magicproject
+_core:
+  default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
+id: magicproject_footer
+theme: magicproject
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Menu Pied de page'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

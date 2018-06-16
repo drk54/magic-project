@@ -1,0 +1,22 @@
+uuid: 4940a465-ecf3-4b84-b3f9-ad5f3ea1fe75
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - magicproject
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: magicproject_messages
+theme: magicproject
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messages de statut'
+  provider: system
+  label_display: '0'
+visibility: {  }

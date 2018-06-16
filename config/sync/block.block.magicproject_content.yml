@@ -1,0 +1,22 @@
+uuid: 87e21e04-af7a-426b-b48e-5aa269823ce4
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - magicproject
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: magicproject_content
+theme: magicproject
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  provider: system
+  label_display: '0'
+visibility: {  }

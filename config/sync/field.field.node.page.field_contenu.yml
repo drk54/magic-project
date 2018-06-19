@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_contenu
     - node.type.page
+    - paragraphs.paragraphs_type.gallerie_images
     - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
@@ -24,8 +25,12 @@ settings:
     negate: 0
     target_bundles:
       video: video
+      gallerie_images: gallerie_images
     target_bundles_drag_drop:
       video:
         enabled: true
         weight: 2
+      gallerie_images:
+        enabled: true
+        weight: 3
 field_type: entity_reference_revisions

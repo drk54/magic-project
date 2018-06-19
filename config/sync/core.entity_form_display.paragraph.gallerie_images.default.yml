@@ -1,0 +1,27 @@
+uuid: 3bfd0f26-266b-4627-9e2a-1d4a9faf8627
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallerie_images.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.gallerie_images
+  module:
+    - image
+id: paragraph.gallerie_images.default
+targetEntityType: paragraph
+bundle: gallerie_images
+mode: default
+content:
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

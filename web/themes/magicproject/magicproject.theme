@@ -4,11 +4,19 @@
  * Implements theme_preprocess_HOOK().
  */
 function magicproject_preprocess_html(&$variables) {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    $xuacompatible = [
+        '#tag' => 'meta',
+        '#attributes' => [
+            'name' => 'viewport',
+            'content' => 'width=device-width, user-scalable=no, initial-scale=1',
+        ],
+    ];
 
-        $node = \Drupal::routeMatch()->getParameter('node');
     if($node != NULL){
         $content_type = $node->bundle();
         $variables['attributes']['class'][] = $content_type;
+        $variables['page']['#attached']['html_head'][] = [$xuacompatible, 'x-ua-compatible'];
     }
 
 }

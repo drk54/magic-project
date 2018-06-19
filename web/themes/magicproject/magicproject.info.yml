@@ -18,6 +18,7 @@ package: MagicProject
 version: 1.0
 core: 8.x
 libraries:
+  - magicproject/slick-slider
   - magicproject/mp-styling
 #ckeditor_stylesheets:
 #  - css/base/elements.css

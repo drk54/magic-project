@@ -8,8 +8,8 @@ dependencies:
     - magicproject
 id: messages
 theme: magicproject
-region: header
-weight: 0
+region: content
+weight: -2
 provider: null
 plugin: system_messages_block
 settings:

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.gallerie_images.field_image
+    - image.style.large
     - paragraphs.paragraphs_type.gallerie_images
   module:
     - image
@@ -16,7 +17,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
     third_party_settings: {  }
     type: image

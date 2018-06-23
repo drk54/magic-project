@@ -1,6 +1,9 @@
 (function($) {
 
-    $('.slider-for').slick({
+    const $slider_for = $(".slider-for");
+    const $slider_nav = $(".slider-nav");
+
+    $slider_for.slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
@@ -9,11 +12,11 @@
         adaptiveHeight: true,
         lazyLoad: 'ondemand'
     });
-    $('.slider-nav').slick({
+    $slider_nav.slick({
         slidesToShow: 6,
         slidesToScroll: 1,
         asNavFor: '.slider-for',
-        dots: false,
+        dots: true,
         centerMode: true,
         focusOnSelect: true,
         vertical: true,
@@ -21,39 +24,33 @@
     });
 
     $(window).on('rezise', function(){
-        var max_height = $('.slider-for').height();
-        $('.slider-nav').css('max-height', max_height+'px');
+        var max_height = $slider_for.height();
+        $slider_nav.css('max-height', max_height+'px');
     });
 
     $(window).ready(function(){
-        var max_height = $('.slider-for').height();
-        $('.slider-nav').css('max-height', max_height+'px');
+        var max_height = $slider_for.height();
+        $slider_nav.css('max-height', max_height+'px');
     });
 
-    const $slider = $(".slider-nav");
-    $slider
+    $slider_nav
         .on('init', function() {
-            mouseWheel($slider)
-        })
-        .slick({
-            dots: true,
-            vertical: true,
-            infinite: false,
-        });
-        function mouseWheel($slider) {
-            $(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
+            mouseWheel($slider_nav)
+        }).slick({});
+    function mouseWheel($slider_nav) {
+        $(window).on('wheel', { $slider_nav: $slider_nav }, mouseWheelHandler)
+    }
+    function mouseWheelHandler(event) {
+        event.preventDefault();
+        const $slider_nav = event.data.$slider_nav
+        const delta = event.originalEvent.deltaY
+        if(delta > 0) {
+            $slider_nav.slick('slickNext')
         }
-        function mouseWheelHandler(event) {
-            event.preventDefault();
-            const $slider = event.data.$slider
-            const delta = event.originalEvent.deltaY
-            if(delta > 0) {
-                $slider.slick('slickNext')
-            }
-            else {
-                $slider.slick('slickPrev')
-            }
+        else {
+            $slider_nav.slick('slickPrev')
         }
+    }
 
 
 

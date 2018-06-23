@@ -1,0 +1,25 @@
+uuid: 73dffc3e-fa98-4786-9974-af7da8dae5c0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - magicproject
+id: messages
+theme: magicproject
+region: content
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+    context_mapping: {  }

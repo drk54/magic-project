@@ -2,8 +2,9 @@
 @import "include/common/common";
 @import "include/common/color";
 
-//menu
-@import 'include/page/page';
-
 //page
 @import 'include/menu/menu';
+
+//menu
+@import 'include/page/page';
+@import 'include/page/slider';

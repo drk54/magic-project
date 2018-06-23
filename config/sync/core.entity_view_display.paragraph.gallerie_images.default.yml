@@ -1,0 +1,25 @@
+uuid: 381b568f-6a39-45f3-ad54-0388c5f30dbe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallerie_images.field_image
+    - image.style.large
+    - paragraphs.paragraphs_type.gallerie_images
+  module:
+    - image
+id: paragraph.gallerie_images.default
+targetEntityType: paragraph
+bundle: gallerie_images
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

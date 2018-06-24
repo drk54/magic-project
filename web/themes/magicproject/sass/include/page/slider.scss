@@ -1,6 +1,9 @@
 .slider-nav{
   overflow: hidden;
   position: relative;
+  img{
+    cursor: pointer;
+  }
 }
 
 .slick-arrow{

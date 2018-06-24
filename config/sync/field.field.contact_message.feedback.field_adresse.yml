@@ -1,0 +1,19 @@
+uuid: 319fda82-559f-4e8a-bca2-65aa99fd4686
+langcode: fr
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+    - field.storage.contact_message.field_adresse
+id: contact_message.feedback.field_adresse
+field_name: field_adresse
+entity_type: contact_message
+bundle: feedback
+label: Adresse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

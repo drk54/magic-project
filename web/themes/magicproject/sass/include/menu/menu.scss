@@ -2,25 +2,36 @@
 .menu{
 
   &__main{
-  }
 
-  &__menu{
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    li{
-      &:hover{
-        background-color: $color_red;
+    .menu__menu{
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      border: 1px solid black;
+      li{
+        float: left;
+        &:hover{
+          background-color: $color_red;
+          a{
+            color: white;
+            text-decoration: none;
+          }
+        }
+        border-right: 1px solid black;
+        &:last-child{
+          border: none;
+        }
         a{
-          color: white;
-          text-decoration: none;
+          line-height: 30px;
+          padding: 10px;
+          color: black;
         }
       }
-      a{
-        color: black;
-      }
     }
+
   }
+
+
 
 }

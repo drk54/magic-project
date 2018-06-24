@@ -1,0 +1,13 @@
+<div class="row contact-form__element">
+    <div class="col-md-12">
+        {{ label }}:
+    </div>
+    <div class="col-md-12">
+        {{ children }}
+    </div>
+    {% if errors %}
+        <div class="form-item--error-message col-md-12">
+            {{ errors }}
+        </div>
+    {% endif %}
+</div>

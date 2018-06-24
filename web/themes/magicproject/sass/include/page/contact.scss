@@ -1,0 +1,34 @@
+.contact-form{
+  label{
+    margin: 0;
+  }
+  &__element{
+    margin: 0 0 15px 0;
+    textarea, input{
+      width: 100%;
+      color: white;
+      background-color: black;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 5px 5px 40px -4px rgba(0,0,0,0.75);
+    }
+  }
+  #edit-submit{
+    float: right;
+    color: black;
+    cursor: pointer;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 5px 5px 40px -4px rgba(0,0,0,0.75);
+    transition: all 300ms;
+    &:hover{
+      color: white;
+      background: $color_red;
+    }
+  }
+  #edit-preview{
+    display: none;
+  }
+}

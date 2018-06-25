@@ -12,9 +12,13 @@
         </div>
     </div>
 </div>
-<div>
+<div class="full_screen hidden">
+    <div class="full_screen__close">
+        <div class="close_1"></div>
+        <div class="close_2"></div>
+    </div>
     {% for image in images_original %}
-        <img src="" alt="image" data-src="{{ image.url }}" data-index="{{ image.index }}">
+        <span class="full_screen__data" data-src="{{ image.url }}" data-index="{{ image.index }}"></span>
     {% endfor %}
 </div>
 

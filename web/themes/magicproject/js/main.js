@@ -48,7 +48,7 @@
         $full_screen.append('<img class="full_screen__image" src="'+img_src+'">');
     });
 
-    $('.full_screen__close').on('click', function () {
+    $('.full_screen').on('click', function () {
         if(image_index !== false){
             $('.full_screen__image').remove();
             $full_screen.toggleClass('visible');

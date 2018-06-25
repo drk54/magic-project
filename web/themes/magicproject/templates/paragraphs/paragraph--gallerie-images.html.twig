@@ -12,4 +12,9 @@
         </div>
     </div>
 </div>
+<div>
+    {% for image in images_original %}
+        <img src="" alt="image" data-src="{{ image.url }}" data-index="{{ image.index }}">
+    {% endfor %}
+</div>
 

@@ -1,5 +1,9 @@
 <?php
 
+use Drupal\file\Entity\File;
+use Drupal\image\Entity\ImageStyle;
+use Drupal\Core\Url;
+
 /**
  * Implements theme_preprocess_HOOK().
  */
@@ -55,4 +59,20 @@ function magicproject_preprocess_menu(&$variables, $hook) {
 
 function magicproject_preprocess_page(&$variables){
     $variables['logopath'] = '/' . drupal_get_path('theme','magicproject') . '/logo.jpg';
+}
+
+function magicproject_preprocess_paragraph__gallerie_images(&$variables){
+
+    $variables['images_original'] = [];
+
+    foreach ($variables['content']['field_image'] as $key => $value){
+        if(is_numeric($key)){
+            $fid = $value['#item']->target_id;
+            $file = File::load($fid);
+            $variables['images_original'][] = [
+                'url' => file_create_url($file->getFileUri()),
+                'index' => $key
+            ];
+        }
+    }
 }

@@ -64,4 +64,21 @@
         }
     });
 
+    //
+    //VIDEO
+    //
+
+    $('.slider_video').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        adaptiveHeight: false,
+        lazyLoad: 'ondemand'
+    });
+
+    $('.thumbnail__link').on('click', function(){
+        var video_url = $(this).find('img').data('video');
+        $('#youtube-field-player').attr('src', video_url);
+    });
+
 })( jQuery );

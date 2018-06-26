@@ -76,3 +76,27 @@ function magicproject_preprocess_paragraph__gallerie_images(&$variables){
         }
     }
 }
+
+function magicproject_preprocess_paragraph__gallerie_de_videos(&$variables){
+
+    $variables['videos_thumbnail'] = [];
+    $indexImg = 1;
+    $slide = 0;
+
+    foreach ($variables['content']['field_video'] as $key => $value){
+        if(is_numeric($key)){
+            $vid = $value['#video_id'];
+            if($key != 0){
+                $variables['videos_thumbnail'][$slide][] = [
+                    'video_url' => 'https://www.youtube.com/embed/'.$vid.'?wmode=opaque',
+                    'image_url' => 'https://img.youtube.com/vi/'.$vid.'/0.jpg'
+                ];
+                if($indexImg%8 == 0){
+                    $slide++;
+                }
+                $indexImg++;
+                unset($variables['content']['field_video'][$key]);
+            }
+        }
+    }
+}

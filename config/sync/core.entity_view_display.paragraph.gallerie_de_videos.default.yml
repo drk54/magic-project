@@ -1,0 +1,31 @@
+uuid: 067742ff-b04b-4792-908c-b55cfe657ab3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallerie_de_videos.field_video
+    - paragraphs.paragraphs_type.gallerie_de_videos
+  module:
+    - youtube
+id: paragraph.gallerie_de_videos.default
+targetEntityType: paragraph
+bundle: gallerie_de_videos
+mode: default
+content:
+  field_video:
+    weight: 0
+    label: hidden
+    settings:
+      youtube_size: responsive
+      youtube_width: ''
+      youtube_height: ''
+      youtube_autoplay: false
+      youtube_loop: false
+      youtube_showinfo: false
+      youtube_controls: false
+      youtube_autohide: false
+      youtube_iv_load_policy: false
+    third_party_settings: {  }
+    type: youtube_video
+    region: content
+hidden: {  }

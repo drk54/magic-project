@@ -1,0 +1,24 @@
+uuid: 5156c998-01a5-4b11-b38f-0b7f17d60f36
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallerie_de_videos.field_video
+    - paragraphs.paragraphs_type.gallerie_de_videos
+  module:
+    - youtube
+id: paragraph.gallerie_de_videos.default
+targetEntityType: paragraph
+bundle: gallerie_de_videos
+mode: default
+content:
+  field_video:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: youtube
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

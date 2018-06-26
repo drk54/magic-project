@@ -1,0 +1,9 @@
+uuid: c743050d-1928-4d94-b279-33db64beb57d
+langcode: fr
+status: true
+dependencies: {  }
+id: gallerie_de_videos
+label: 'Gallerie de vidéos'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,9 @@
+uuid: 9f733331-de9c-4780-9d5b-768c5dc43773
+langcode: fr
+status: true
+dependencies: {  }
+id: texte
+label: Texte
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

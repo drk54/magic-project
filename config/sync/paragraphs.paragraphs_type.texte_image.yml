@@ -1,0 +1,9 @@
+uuid: 72086433-ec86-470c-a2b8-733f73c13793
+langcode: fr
+status: true
+dependencies: {  }
+id: texte_image
+label: 'Texte + image'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

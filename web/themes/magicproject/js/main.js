@@ -81,4 +81,34 @@
         $('#youtube-field-player').attr('src', video_url);
     });
 
+    //EGG
+    $.extend({
+        playSound: function () {
+            return $(
+                '<audio class="sound-player" autoplay="autoplay" style="display:none;">'
+                + '<source src="' + arguments[0] + '" />'
+                + '<embed src="' + arguments[0] + '" hidden="true" autostart="true" loop="false"/>'
+                + '</audio>'
+            ).appendTo('body');
+        }
+    });
+    var magicword = '667979777283' ;
+    var index = 0;
+    $(document).on('keyup', function(e){
+        var key = e.keyCode;
+        if(key == magicword.substr(index, 2)){
+            index = index+2;
+            if(index == 12){
+                var audio = {};
+                $.playSound("/themes/magicproject/sound/boom.mp3");
+                setTimeout(function(){
+                    $('.sound-player').remove();
+                }, 1500);
+                index = 0;
+            }
+        }else{
+            index = 0;
+        }
+    });
+
 })( jQuery );

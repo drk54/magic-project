@@ -1,31 +1,31 @@
-<div class="video_gallery">
-    <div class="video_wrapper">
-        <div class="row justify-content-md-center">
-            <div class="col-md-10">
-                {{ content }}
+<section class="section">
+    <div class="video_gallery">
+        <div class="video_wrapper">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    {{ content }}
+                </div>
             </div>
         </div>
-    </div>
-    <div class="thumbnail__wrapper thumbnail">
-        <div class="row justify-content-md-center">
-            <div class="col-md-10">
-                <div class="slider_video">
-                    {% for group in videos_thumbnail %}
-                        <div>
-                            <div class="row thumbnail__group">
-                                {% for video in group %}
-                                    <div class="col-md-3 thumbnail__link">
-                                        <img src="{{ video.image_url }}" alt="thumbnail" data-video="{{ video.video_url }}" class="thumbnail__image">
-                                        <div class="thumbnail__play"></div>
-                                    </div>
-                                {% endfor %}
+        <div class="thumbnail__wrapper thumbnail">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <div class="slider_video">
+                        {% for group in videos_thumbnail %}
+                            <div>
+                                <div class="row thumbnail__group">
+                                    {% for video in group %}
+                                        <div class="col-md-3 thumbnail__link">
+                                            <img src="{{ video.image_url }}" alt="thumbnail" data-video="{{ video.video_url }}" class="thumbnail__image">
+                                            <div class="thumbnail__play"></div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
                             </div>
-                        </div>
-                    {% endfor %}
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-</div>
+</section>

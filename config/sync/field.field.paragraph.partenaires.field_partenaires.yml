@@ -1,0 +1,43 @@
+uuid: 5d254661-fb7a-4d5e-a8ed-7d3878cb163b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_partenaires
+    - paragraphs.paragraphs_type.partenaire
+    - paragraphs.paragraphs_type.partenaires
+  module:
+    - entity_reference_revisions
+id: paragraph.partenaires.field_partenaires
+field_name: field_partenaires
+entity_type: paragraph
+bundle: partenaires
+label: Partenaires
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      partenaire: partenaire
+    target_bundles_drag_drop:
+      partenaires:
+        weight: 6
+        enabled: false
+      gallerie_de_videos:
+        weight: 7
+        enabled: false
+      gallerie_images:
+        weight: 8
+        enabled: false
+      partenaire:
+        enabled: true
+        weight: 9
+      video:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

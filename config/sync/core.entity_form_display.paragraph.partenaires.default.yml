@@ -1,0 +1,30 @@
+uuid: 5881c635-3648-4678-b507-4290df959187
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partenaires.field_partenaires
+    - paragraphs.paragraphs_type.partenaires
+  module:
+    - paragraphs
+id: paragraph.partenaires.default
+targetEntityType: paragraph
+bundle: partenaires
+mode: default
+content:
+  field_partenaires:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

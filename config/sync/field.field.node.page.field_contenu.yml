@@ -7,6 +7,7 @@ dependencies:
     - node.type.page
     - paragraphs.paragraphs_type.gallerie_de_videos
     - paragraphs.paragraphs_type.gallerie_images
+    - paragraphs.paragraphs_type.partenaires
     - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
@@ -28,6 +29,7 @@ settings:
       video: video
       gallerie_images: gallerie_images
       gallerie_de_videos: gallerie_de_videos
+      partenaires: partenaires
     target_bundles_drag_drop:
       video:
         enabled: true
@@ -38,4 +40,10 @@ settings:
       gallerie_de_videos:
         enabled: true
         weight: 4
+      partenaires:
+        enabled: true
+        weight: 6
+      partenaire:
+        weight: 9
+        enabled: false
 field_type: entity_reference_revisions

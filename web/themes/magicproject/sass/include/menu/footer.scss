@@ -1,0 +1,68 @@
+.footer{
+
+  background-color: black;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+
+  &:before{
+    content: '';
+    background: black;
+    width: 100%;
+    position: absolute;
+    height: 30px;
+    top: -30px;
+    border-radius: 100% 0 0 0;
+  }
+
+  .phone{
+    &__link{
+      text-decoration: none;
+    }
+    &__number{
+      font-size: 25px;
+      color: white;
+      transition: color 300ms;
+      &:before{
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 25px;
+        margin-right: 10px;
+        vertical-align: middle;
+        background:{
+          repeat: no-repeat;
+          size: contain;
+          image: url('../images/phone.svg');
+        }
+      }
+      &:hover{
+        color: red;
+      }
+    }
+  }
+
+  &__icon{
+
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background:{
+      repeat: no-repeat;
+      size: contain;
+    }
+
+    &.facebook{
+      background-image: url('../images/facebook.svg');
+    }
+    &.twitter{
+      background-image: url('../images/twitter.svg');
+    }
+    &.google{
+      background-image: url('../images/google.svg');
+    }
+
+  }
+
+}

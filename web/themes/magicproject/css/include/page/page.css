@@ -1,1 +1,1 @@
-.page{margin-top:15vh}
+.page{padding-top:15vh;position:relative;min-height:100vh}.page__bottom{bottom:0;position:absolute;width:100%}.page .content{padding-bottom:200px}

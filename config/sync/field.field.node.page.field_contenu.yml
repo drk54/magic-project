@@ -8,6 +8,8 @@ dependencies:
     - paragraphs.paragraphs_type.gallerie_de_videos
     - paragraphs.paragraphs_type.gallerie_images
     - paragraphs.paragraphs_type.partenaires
+    - paragraphs.paragraphs_type.texte
+    - paragraphs.paragraphs_type.texte_image
     - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
@@ -30,6 +32,8 @@ settings:
       gallerie_images: gallerie_images
       gallerie_de_videos: gallerie_de_videos
       partenaires: partenaires
+      texte_image: texte_image
+      texte: texte
     target_bundles_drag_drop:
       video:
         enabled: true
@@ -43,6 +47,12 @@ settings:
       partenaires:
         enabled: true
         weight: 6
+      texte_image:
+        enabled: true
+        weight: 7
+      texte:
+        enabled: true
+        weight: 8
       partenaire:
         weight: 9
         enabled: false

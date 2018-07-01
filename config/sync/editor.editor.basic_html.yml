@@ -20,36 +20,28 @@ settings:
             - Bold
             - Italic
         -
+          name: alignement
+          items:
+            - Styles
+        -
           name: Linking
           items:
             - DrupalLink
             - DrupalUnlink
         -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalImage
-        -
           name: 'Block Formatting'
           items:
             - Format
-        -
-          name: Tools
-          items:
-            - Source
   plugins:
+    language:
+      language_list: un
     stylescombo:
-      styles: ''
+      styles: "p.text-align-left|Texte a gauche\r\np.text-align-right|Texte a droit\r\np.text-align-center|Texte a centré\r\np.text-align-justify|Texte justifié"
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

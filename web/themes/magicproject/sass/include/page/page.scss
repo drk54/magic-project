@@ -1,5 +1,5 @@
 .page{
-  padding-top: 15vh;
+  padding-top: 15vh!important;
   position: relative;
   min-height: 100vh;
   &__bottom{
@@ -10,4 +10,8 @@
   .content{
     padding-bottom: 200px;
   }
+}
+
+.section{
+  margin-bottom: 50px;
 }

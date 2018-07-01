@@ -1,11 +1,13 @@
 //common
+@import "include/common/reset";
 @import "include/common/common";
 @import "include/common/color";
 
-//page
-@import 'include/menu/menu';
-
 //menu
+@import 'include/menu/menu';
+@import 'include/menu/footer';
+
+//page
 @import 'include/page/page';
 @import 'include/page/slider';
 @import 'include/page/partners';

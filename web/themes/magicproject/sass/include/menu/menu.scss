@@ -2,30 +2,47 @@
 .menu{
 
   &__main{
+    margin-bottom: 50px;
 
     .menu__menu{
       display: inline-block;
       padding: 0;
       margin: 0;
       list-style: none;
-      border: 1px solid black;
       li{
         float: left;
+        border-left: 1px solid transparent;
+        border-top: 1px solid transparent;
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid black;
         &:hover{
           background-color: $color_red;
+          border-left: 1px solid black;
+          border-top: 1px solid black;
+          border-right: 1px solid black;
+          border-bottom: 1px solid transparent;
           a{
             color: white;
             text-decoration: none;
           }
         }
-        border-right: 1px solid black;
         &:last-child{
-          border: none;
         }
         a{
           line-height: 30px;
           padding: 10px;
           color: black;
+        }
+        &.active{
+          background-color: $color_red;
+          border-left: 1px solid black;
+          border-top: 1px solid black;
+          border-right: 1px solid black;
+          border-bottom: 1px solid transparent;
+          a{
+            color: white;
+            text-decoration: none;
+          }
         }
       }
     }

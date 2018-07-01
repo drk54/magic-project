@@ -1,0 +1,36 @@
+uuid: 9ad1accf-8a2b-43f6-91a2-cf540632fa51
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partenaire.field_logo_partenaire
+    - field.field.paragraph.partenaire.field_url_partenaire
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.partenaire
+  module:
+    - image
+id: paragraph.partenaire.default
+targetEntityType: paragraph
+bundle: partenaire
+mode: default
+content:
+  field_logo_partenaire:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_url_partenaire:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

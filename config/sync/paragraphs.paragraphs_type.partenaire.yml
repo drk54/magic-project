@@ -1,0 +1,9 @@
+uuid: d0878165-667a-4f9e-99a8-9ee00aae7479
+langcode: fr
+status: true
+dependencies: {  }
+id: partenaire
+label: partenaire
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

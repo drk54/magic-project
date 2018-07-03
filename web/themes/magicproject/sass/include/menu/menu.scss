@@ -1,5 +1,15 @@
 @import "../common/color";
+@import "../mixin";
+
 .menu{
+
+  .menu_logo{
+    position: absolute;
+    max-width: 300px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
 
   &__burger{
     width: 40px;
@@ -52,7 +62,7 @@
     .menu__menu{
       display: inline-block;
       padding: 0;
-      margin: 0;
+      margin: 0 0 50px 0;
       list-style: none;
       li{
         float: left;
@@ -100,6 +110,10 @@
           margin-bottom: 25px;
           &:hover{
             border: none;
+            background-color: transparent;
+            a{
+              color: black;
+            }
           }
           &.active{
             background-color: transparent;

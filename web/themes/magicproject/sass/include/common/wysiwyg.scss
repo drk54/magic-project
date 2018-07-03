@@ -33,6 +33,9 @@ ol{
 }
 .text-align-right{
   text-align: right;
+  @include breakpoint(tablet){
+    text-align: center;
+  }
 }
 .text-align-center{
   text-align: center;

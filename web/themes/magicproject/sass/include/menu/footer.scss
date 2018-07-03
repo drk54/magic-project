@@ -2,7 +2,7 @@
 
   background-color: black;
   width: 100%;
-  position: relative;
+  position: absolute;
   bottom: 0;
 
   &:before{
@@ -11,7 +11,7 @@
     width: 100%;
     position: absolute;
     height: 30px;
-    top: -30px;
+    top: -29px;
     border-radius: 100% 0 0 0;
   }
 

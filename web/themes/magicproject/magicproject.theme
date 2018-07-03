@@ -38,6 +38,7 @@ function magicproject_theme_suggestions_page_alter(array &$suggestions, array $v
 
 function magicproject_preprocess_menu(&$variables, $hook) {
     if ($hook == 'menu__main') {
+        $variables['logopath'] = theme_get_setting('logo.url');
         $current_path = \Drupal::request()->getRequestUri();
         $items = $variables['items'];
 
@@ -58,7 +59,7 @@ function magicproject_preprocess_menu(&$variables, $hook) {
 }
 
 function magicproject_preprocess_page(&$variables){
-    $variables['logopath'] = '/' . drupal_get_path('theme','magicproject') . '/logo.jpg';
+    $variables['logopath'] = theme_get_setting('logo.url');
 }
 
 function magicproject_preprocess_paragraph__gallerie_images(&$variables){

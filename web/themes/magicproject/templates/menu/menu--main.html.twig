@@ -1,5 +1,7 @@
 {{ menus.menu_links(items, attributes, 0) }}
 
+<img class="menu_logo desktop-hidden mobile-hidden" src="{{ logopath }}" alt="logo">
+
 <div class="container">
     <ul{{ attributes }} class="menu__menu">
         {% for item in items %}

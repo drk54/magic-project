@@ -1,37 +1,37 @@
 <section class="section">
     {% if content.field_position_[0]['#markup'] == 'top' %}
         <div class="row text_image">
-            <div class="text_image__image col-md-12">
+            <div class="text_image__image col-xl-12">
                 {{ content.field_image_single }}
             </div>
-            <div class="text_image__text col-md-12">
+            <div class="text_image__text col-xl-12">
                 {{ content.field_texte }}
             </div>
         </div>
     {% elseif content.field_position_[0]['#markup'] == 'bottom' %}
         <div class="row text_image">
-            <div class="text_image__text col-md-12">
+            <div class="text_image__text col-xl-12">
                 {{ content.field_texte }}
             </div>
-            <div class="text_image__image col-md-12">
+            <div class="text_image__image col-xl-12">
                 {{ content.field_image_single }}
             </div>
         </div>
     {% elseif content.field_position_[0]['#markup'] == 'right' %}
         <div class="row text_image">
-            <div class="text_image__text col-md-6">
+            <div class="text_image__text col-xl-6">
                 {{ content.field_texte }}
             </div>
-            <div class="text_image__image col-md-6">
+            <div class="text_image__image col-xl-6">
                 {{ content.field_image_single }}
             </div>
         </div>
     {% elseif content.field_position_[0]['#markup'] == 'left' %}
         <div class="row text_image">
-            <div class="text_image__image col-md-6">
+            <div class="text_image__image col-xl-6">
                 {{ content.field_image_single }}
             </div>
-            <div class="text_image__text col-md-6">
+            <div class="text_image__text col-xl-6">
                 {{ content.field_texte }}
             </div>
         </div>

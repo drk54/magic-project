@@ -2,10 +2,16 @@
   padding-top: 15vh!important;
   position: relative;
   min-height: 100vh;
+  @include breakpoint(tablet){
+    padding-top: 50px!important;
+  }
   &__bottom{
     bottom: 0;
     position: absolute;
     width: 100%;
+    @include breakpoint(tablet){
+      position: initial;
+    }
   }
   .content{
     padding-bottom: 200px;

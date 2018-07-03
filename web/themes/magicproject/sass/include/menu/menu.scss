@@ -1,6 +1,51 @@
 @import "../common/color";
 .menu{
 
+  &__burger{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    .burger{
+      width: 40px;
+      height: 4px;
+      background-color: black;
+      position: absolute;
+      border-radius: 2px;
+      transition: all 300ms;
+      &:first-child{
+        top: 0;
+      }
+      &:nth-child(2){
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+      &:last-child{
+        bottom: 0;
+      }
+    }
+    &.active{
+      .burger{
+        background-color: red;
+        &:first-child{
+          transform: rotate(45deg);
+          top: 13px;
+        }
+        &:nth-child(2){
+          width: 0;
+          left: 50%;
+        }
+        &:last-child{
+          transform: rotate(-45deg);
+          bottom: 13px;
+        }
+      }
+    }
+  }
+
   &__main{
     margin-bottom: 50px;
 
@@ -45,10 +90,39 @@
           }
         }
       }
+      @include breakpoint(tablet){
+        margin-top: 25px;
+        li{
+          float: none;
+          border: none;
+          font-size: 25px;
+          font-weight: bold;
+          margin-bottom: 25px;
+          &:hover{
+            border: none;
+          }
+          &.active{
+            background-color: transparent;
+            border: none;
+            border-left: 4px solid $color_red;
+            a{
+              color: black;
+            }
+          }
+        }
+      }
     }
 
   }
 
-
+  @include breakpoint(tablet){
+    position: absolute;
+    top: 0;
+    padding-top: 50px;
+    background: white;
+    width: 100%;
+    display: none;
+    box-shadow: 0 0 20px 0 $color_red;
+  }
 
 }

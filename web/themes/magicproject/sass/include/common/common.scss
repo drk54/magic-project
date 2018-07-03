@@ -1,3 +1,5 @@
+@import "../mixin";
+
 *{
   text-align: justify;
 }
@@ -8,14 +10,24 @@
   .wrapper{
     padding-top: 140px;
     max-width: 100%;
+    @include breakpoint(tablet){
+      padding-top: 0;
+    }
   }
   .logo{
     max-width: 100%;
+    @include breakpoint(tablet){
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
   }
   .page_title{
     font-size: 20px;
     text-align: center;
     padding: 20px 0;
+  }
+  @include breakpoint(tablet){
+    margin-bottom: 50px;
   }
 
 }
@@ -28,4 +40,28 @@
 
 .visible{
   display: block;
+}
+
+.desktop-hidden{
+  @include breakpoint(desktop){
+    display: none;
+  }
+}
+
+.tablet-hidden{
+  @include breakpoint(tablet){
+    display: none;
+  }
+}
+
+.tablet-visible{
+  @include breakpoint(tablet){
+    display: block!important;
+  }
+}
+
+.mobile-hidden{
+  @include breakpoint(mobile){
+    display: none;
+  }
 }

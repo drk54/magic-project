@@ -105,7 +105,7 @@
     $(window).ready(function(){
         if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
             $('.footer__social .facebook').attr('href', 'fb://page/410003382397452');
-            $('.footer__social .twitter').attr('href', 'twitter:///user?screen_name=FlorianoProject');
+            $('.footer__social .twitter').attr('href', 'http://twitter.com/FlorianoProject');
         }
     });
 

@@ -14,11 +14,16 @@
       padding-top: 0;
     }
   }
+  .link{
+    @include breakpoint(tablet){
+      display: block;
+    }
+  }
   .logo{
     max-width: 100%;
     @include breakpoint(tablet){
-      margin-left: 50%;
-      transform: translateX(-50%);
+      display: block;
+      margin: auto;
     }
   }
   .page_title{

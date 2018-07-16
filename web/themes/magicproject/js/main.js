@@ -109,6 +109,12 @@
         }
     });
 
+    if($('.text-image').length){
+        $('.col-left').removeClass('col-xl-3');
+        $('.col-right').removeClass('col-xl-9');
+        $('.sidebar').addClass('logo-top');
+    }
+
 
 
 

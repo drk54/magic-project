@@ -5,15 +5,15 @@
   position: absolute;
   bottom: 0;
 
-  &:before{
-    content: '';
-    background: black;
-    width: 100%;
-    position: absolute;
-    height: 30px;
-    top: -29px;
-    border-radius: 100% 0 0 0;
-  }
+  //&:before{
+  //  content: '';
+  //  background: black;
+  //  width: 100%;
+  //  position: absolute;
+  //  height: 30px;
+  //  top: -29px;
+  //  border-radius: 100% 0 0 0;
+  //}
 
   .phone{
     &__link{

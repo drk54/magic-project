@@ -57,7 +57,7 @@
   }
 
   &__main{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     .menu__menu{
       display: inline-block;
@@ -66,16 +66,10 @@
       list-style: none;
       li{
         float: left;
-        border-left: 1px solid transparent;
-        border-top: 1px solid transparent;
-        border-right: 1px solid transparent;
-        border-bottom: 1px solid black;
+        background-color: black;
+        transition: all 300ms;
         &:hover{
           background-color: $color_red;
-          border-left: 1px solid black;
-          border-top: 1px solid black;
-          border-right: 1px solid black;
-          border-bottom: 1px solid transparent;
           a{
             color: white;
             text-decoration: none;
@@ -86,14 +80,10 @@
         a{
           line-height: 30px;
           padding: 10px;
-          color: black;
+          color: white;
         }
         &.active{
           background-color: $color_red;
-          border-left: 1px solid black;
-          border-top: 1px solid black;
-          border-right: 1px solid black;
-          border-bottom: 1px solid transparent;
           a{
             color: white;
             text-decoration: none;
@@ -104,12 +94,10 @@
         margin-top: 25px;
         li{
           float: none;
-          border: none;
           font-size: 25px;
           font-weight: bold;
           margin-bottom: 25px;
           &:hover{
-            border: none;
             background-color: transparent;
             a{
               color: black;
@@ -117,7 +105,6 @@
           }
           &.active{
             background-color: transparent;
-            border: none;
             border-left: 4px solid $color_red;
             a{
               color: black;

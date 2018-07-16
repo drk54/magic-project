@@ -14,6 +14,12 @@
       padding-top: 0;
     }
   }
+  &.logo-top{
+    .wrapper{
+      padding-top: 0;
+      padding-bottom: 30px;
+    }
+  }
   .link{
     @include breakpoint(tablet){
       display: block;
@@ -21,10 +27,8 @@
   }
   .logo{
     max-width: 100%;
-    @include breakpoint(tablet){
-      display: block;
-      margin: auto;
-    }
+    display: block;
+    margin: auto;
   }
   .page_title{
     font-size: 20px;

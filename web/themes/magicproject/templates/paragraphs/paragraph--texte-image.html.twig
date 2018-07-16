@@ -1,7 +1,7 @@
-<section class="section">
+<section class="section text-image">
     {% if content.field_position_[0]['#markup'] == 'top' %}
         <div class="row text_image">
-            <div class="text_image__image col-xl-12 col-md-6 offset-md-3">
+            <div class="text_image__image col-xl-12 col-md-6 offset-md-3 offset-xl-0">
                 {{ content.field_image_single }}
             </div>
             <div class="text_image__text col-xl-12">
@@ -13,7 +13,7 @@
             <div class="text_image__text col-xl-12">
                 {{ content.field_texte }}
             </div>
-            <div class="text_image__image col-xl-12 col-md-6 offset-md-3">
+            <div class="text_image__image col-xl-12 col-md-6 offset-md-3 offset-xl-0">
                 {{ content.field_image_single }}
             </div>
         </div>
@@ -22,13 +22,13 @@
             <div class="text_image__text col-xl-6 col-md-12">
                 {{ content.field_texte }}
             </div>
-            <div class="text_image__image col-xl-6 col-md-6 offset-md-3">
+            <div class="text_image__image col-xl-6 col-md-6 offset-md-3 offset-xl-0">
                 {{ content.field_image_single }}
             </div>
         </div>
     {% elseif content.field_position_[0]['#markup'] == 'left' %}
         <div class="row text_image">
-            <div class="text_image__image col-xl-6 col-md-6 offset-md-3">
+            <div class="text_image__image col-xl-6 col-md-6 offset-md-3 offset-xl-0">
                 {{ content.field_image_single }}
             </div>
             <div class="text_image__text col-xl-6 col-md-12">

@@ -4,6 +4,7 @@
   width: 100%;
   position: absolute;
   bottom: 0;
+  padding-bottom: 5px;
 
   //&:before{
   //  content: '';
@@ -63,6 +64,13 @@
       background-image: url('../images/google.svg');
     }
 
+  }
+
+  .copyright{
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #919191;
   }
 
 }

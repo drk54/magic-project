@@ -12,10 +12,10 @@ slick-slider:
   version: 1.0
   css:
     theme:
-      http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css: { type: external }
-      http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css: { type: external }
+      https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css: { type: external }
+      https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css: { type: external }
 
   js:
-    http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js: { type: external, minified: true, scope: footer }
+    https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js: { type: external, minified: true, scope: footer }
   dependencies:
       - core/jquery

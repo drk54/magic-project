@@ -8,32 +8,34 @@
     const $slider_nav   = $(".slider-nav");
     const $full_screen  = $('.full_screen');
 
-    $slider_for.slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        adaptiveHeight: true,
-        lazyLoad: 'ondemand'
-    });
-    $slider_nav.slick({
-        slidesToShow: 6,
-        slidesToScroll: 6,
-        dots: true,
-        vertical : true,
-        lazyLoad: 'ondemand',
-        responsive: [
-            {
-                breakpoint: 1200,
-                settings: {
-                    vertical : false,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    slidesToScroll: 3,
-                    arrows: false,
+    $(window).ready(function(){
+        $slider_for.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            adaptiveHeight: true,
+            lazyLoad: 'ondemand'
+        });
+        $slider_nav.slick({
+            slidesToShow: 6,
+            slidesToScroll: 6,
+            dots: true,
+            vertical : true,
+            lazyLoad: 'ondemand',
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        vertical : false,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        slidesToScroll: 3,
+                        arrows: false,
+                    }
                 }
-            }
-        ]
+            ]
+        });
     });
 
     $('.slider-nav img').on('click', function(){
@@ -82,12 +84,14 @@
     //VIDEO
     //
 
-    $('.slider_video').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        adaptiveHeight: false,
-        lazyLoad: 'ondemand'
+    $(window).ready(function(){
+        $('.slider_video').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            adaptiveHeight: false,
+            lazyLoad: 'ondemand'
+        });
     });
 
     $('.thumbnail__link').on('click', function(){
@@ -107,13 +111,13 @@
             $('.footer__social .facebook').attr('href', 'fb://page/410003382397452');
             $('.footer__social .twitter').attr('href', 'http://twitter.com/FlorianoProject');
         }
-    });
 
-    if($('.text-image').length){
-        $('.col-left').removeClass('col-xl-3');
-        $('.col-right').removeClass('col-xl-9');
-        $('.sidebar').addClass('logo-top');
-    }
+        if($('.text-image').length){
+            $('.col-left').removeClass('col-xl-3');
+            $('.col-right').removeClass('col-xl-9');
+            $('.sidebar').addClass('logo-top');
+        }
+    });
 
 
 

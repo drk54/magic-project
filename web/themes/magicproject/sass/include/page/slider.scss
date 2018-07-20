@@ -5,12 +5,22 @@
     position: relative;
     img{
       cursor: pointer;
+      filter: brightness(1);
+      transition: filter 200ms;
+      &:hover{
+        filter: brightness(0.8);
+      }
     }
   }
 
   .slider-for{
     img{
       cursor: pointer;
+      filter: brightness(1);
+      transition: filter 200ms;
+      &:hover{
+        filter: brightness(0.8);
+      }
     }
   }
 

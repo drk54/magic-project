@@ -121,8 +121,12 @@
 
     $('.sub_menu').on('click', function(e){
         e.stopPropagation();
-        $('.sub_menu.active').removeClass('active');
-        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $(this).toggleClass('active');
+        }else{
+            $('.sub_menu.active').removeClass('active');
+            $(this).toggleClass('active');
+        }
     });
 
     $(window).on('click', function(){

@@ -5,14 +5,14 @@
 <div class="container">
     <ul{{ attributes }} class="menu__menu">
         {% for item in items %}
-            <li>
+            <li {{ item.attributes }}>
                 {% if item.url.routeName ==  '<none>' %}
                     <div class="sub_menu">
                         <span class="sub_menu__link">{{ item.title }}</span>
                         {% if item.below %}
                             <ul class="sub_menu__menu">
                                 {% for subItem in item.below %}
-                                    <li>
+                                    <li {{ subItem.attributes }}>
                                         {{ link(subItem.title, subItem.url) }}
                                     </li>
                                 {% endfor %}

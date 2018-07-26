@@ -54,6 +54,22 @@ function magicproject_preprocess_menu(&$variables, $hook) {
                     $variables['items'][$key]['attributes']->addClass('active');
                 }
             }
+
+            foreach ($item['below'] as $k => $val){
+                // Set active to dom element if path of menu item matches current path
+                if ($val['url']->toString() == $current_path) {
+                    // Add active link.
+                    $variables['items'][$key]['attributes']->addClass('active');
+                    $variables['items'][$key]['below'][$k]['attributes']->addClass('active');
+                } else {
+                    // Set active to dom element if path of menu item matches first part of current path
+                    $url_fragments = explode('/', $current_path);
+                    if (count($url_fragments) > 1 AND '/' . $url_fragments[1] == $item['url']->toString()) {
+                        $variables['items'][$key]['attributes']->addClass('active');
+                        $variables['items'][$key]['below'][$k]['attributes']->addClass('active');
+                    }
+                }
+            }
         }
     }
     if ($hook == 'menu__footer') {

@@ -119,6 +119,20 @@
         }
     });
 
+    $('.sub_menu').on('click', function(e){
+        e.stopPropagation();
+        if($(this).hasClass('active')){
+            $(this).toggleClass('active');
+        }else{
+            $('.sub_menu.active').removeClass('active');
+            $(this).toggleClass('active');
+        }
+    });
+
+    $(window).on('click', function(){
+        $('.sub_menu.active').removeClass('active');
+    });
+
 
 
 

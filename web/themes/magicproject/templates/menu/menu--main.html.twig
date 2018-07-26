@@ -5,16 +5,22 @@
 <div class="container">
     <ul{{ attributes }} class="menu__menu">
         {% for item in items %}
-            <li{{ item.attributes }}>
-                {{ link(item.title, item.url) }}
-                {% if item.below %}
-                    <ul class="sub_menu">
-                        {% for subItem in item.below %}
-                            <li>
-                                {{ link(subItem.title, subItem.url) }}
-                            </li>
-                        {% endfor %}
-                    </ul>
+            <li>
+                {% if item.url.routeName ==  '<none>' %}
+                    <div class="sub_menu">
+                        <span class="sub_menu__link">{{ item.title }}</span>
+                        {% if item.below %}
+                            <ul class="sub_menu__menu">
+                                {% for subItem in item.below %}
+                                    <li>
+                                        {{ link(subItem.title, subItem.url) }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                {% else %}
+                    {{ link(item.title, item.url) }}
                 {% endif %}
             </li>
         {% endfor %}

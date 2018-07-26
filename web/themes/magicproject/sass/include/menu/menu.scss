@@ -70,17 +70,20 @@
         transition: all 300ms;
         &:hover{
           background-color: $color_red;
-          a{
+          a, span{
             color: white;
             text-decoration: none;
           }
         }
         &:last-child{
         }
-        a{
+        a, span{
           line-height: 30px;
-          padding: 10px;
+          padding: 0 10px;
           color: white;
+          cursor: pointer;
+          display: block;
+          width: 100%;
         }
         &.active{
           background-color: $color_red;
@@ -117,6 +120,44 @@
               color: black;
             }
           }
+        }
+      }
+    }
+
+    .sub_menu{
+      position: relative;
+      &.active{
+        display: block;
+        .sub_menu__menu{
+          display: block;
+          padding-bottom: 15px;
+          height: auto;
+        }
+      }
+      &__menu{
+        //display: none;
+        position: absolute;
+        bottom: 100%;
+        padding-bottom: 0;
+        height: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        transition: all 300ms;
+        li{
+          float: none;
+        }
+        &:after{
+          content: '';
+          display: block;
+          position: absolute;
+          bottom: 10px;
+          left: calc(50% - 10px);
+          width: 20px;
+          height: 20px;
+          transform: rotate(-45deg);
+          background-color: black;
+          z-index: -1;
         }
       }
     }

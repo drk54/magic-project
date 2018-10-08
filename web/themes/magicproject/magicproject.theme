@@ -120,3 +120,7 @@ function magicproject_preprocess_paragraph__gallerie_de_videos(&$variables){
         }
     }
 }
+
+function magicproject_preprocess_video_embed_iframe(&$variables){
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+}

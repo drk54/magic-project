@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * Display an iframe with alterable components.
+ */
+#}
+{% if is_front %}
+    <iframe{{ attributes }} allow="autoplay" {% if url is not empty %} src="{{ url }}?autoplay=1&start=0&rel=0&showinfo=0"{% endif %}></iframe>
+{% else %}
+    <iframe{{ attributes }} {% if url is not empty %} src="{{ url }}{% if query is not empty %}?{{ query | url_encode }}{% endif %}{% if fragment is not empty %}#{{ fragment }}{% endif %}"{% endif %}></iframe>
+    <h1 style="margin-bottom:300px">gregerg</h1>
+{% endif %}

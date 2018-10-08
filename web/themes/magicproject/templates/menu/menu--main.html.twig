@@ -5,7 +5,7 @@
 <div class="container">
     <ul{{ attributes }} class="menu__menu">
         {% for item in items %}
-            <li {{ item.attributes }}>
+            <li {{ item.attributes.addClass('multilvl') }}>
                 {% if item.url.routeName ==  '<none>' %}
                     <div class="sub_menu">
                         <span class="sub_menu__link">{{ item.title }}</span>

@@ -76,7 +76,11 @@
         }
         &:hover{
           background-color: $color_red;
-          a, span{
+          >a{
+            color: white;
+            text-decoration: none;
+          }
+          div>span{
             color: white;
             text-decoration: none;
           }
@@ -138,6 +142,7 @@
       position: relative;
       &.active{
         display: block;
+        border: none;
         .sub_menu__menu{
           display: block;
           @include breakpoint(tablet){
@@ -155,6 +160,17 @@
         overflow: hidden;
         li{
           float: none;
+          border-right: 1px solid black;
+          border-bottom: none;
+          @include breakpoint(tablet){
+            border: none;
+          }
+          &:last-child{
+            border-bottom: 1px solid black;
+            @include breakpoint(tablet){
+              border: none;
+            }
+          }
         }
         &:after{
           content: '';
@@ -179,6 +195,11 @@
           &:after{
             display: none;
           }
+        }
+      }
+      &__link{
+        @include breakpoint(tablet){
+          color: black;
         }
       }
     }

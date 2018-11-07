@@ -101,6 +101,22 @@
             color: white;
             text-decoration: none;
           }
+          div>span{
+            color: white;
+            text-decoration: none;
+            +ul li {
+              a{
+                color: black;
+              }
+              &:hover a {
+                color: white;
+              }
+            }
+            +ul .active a{
+              color: white;
+            }
+          }
+
         }
       }
       @include breakpoint(tablet){

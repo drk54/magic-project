@@ -1,0 +1,6 @@
+entity_type_groups:
+  node:
+    page:
+      basic: basic
+      advanced: advanced
+      facebook: facebook

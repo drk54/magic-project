@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'CONTACTEZ MOI'
 recipients:
-  - contact@magic-project.net
+  - floriano.cardosi@gmail.com
 reply: ''
 weight: 0
 message: 'Votre message a été envoyé.'

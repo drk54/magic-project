@@ -1,1 +1,75 @@
-h1{font-size:36px}h2{font-size:34px}h3{font-size:32px}h4{font-size:16px}h5{font-size:14px}h6{font-size:12px}strong{font-weight:bold}em{font-style:italic}ul{list-style:inherit}ol{list-style:inherit}.text-align-left{text-align:left}.text-align-right{text-align:right}@media (max-width: 1199px){.text-align-right{text-align:center}}.text-align-center{text-align:center}.text-align-justify{text-align:justify}
+/* line 3, ../../../sass/sass/include/common/wysiwyg.scss */
+h1 {
+  font-size: 36px;
+}
+
+/* line 6, ../../../sass/sass/include/common/wysiwyg.scss */
+h2 {
+  font-size: 34px;
+}
+
+/* line 9, ../../../sass/sass/include/common/wysiwyg.scss */
+h3 {
+  font-size: 32px;
+}
+
+/* line 12, ../../../sass/sass/include/common/wysiwyg.scss */
+h4 {
+  font-size: 16px;
+}
+
+/* line 15, ../../../sass/sass/include/common/wysiwyg.scss */
+h5 {
+  font-size: 14px;
+}
+
+/* line 18, ../../../sass/sass/include/common/wysiwyg.scss */
+h6 {
+  font-size: 12px;
+}
+
+/* line 21, ../../../sass/sass/include/common/wysiwyg.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 24, ../../../sass/sass/include/common/wysiwyg.scss */
+em {
+  font-style: italic;
+}
+
+/* line 27, ../../../sass/sass/include/common/wysiwyg.scss */
+ul {
+  list-style: inherit;
+}
+
+/* line 30, ../../../sass/sass/include/common/wysiwyg.scss */
+ol {
+  list-style: inherit;
+}
+
+/* line 33, ../../../sass/sass/include/common/wysiwyg.scss */
+.text-align-left {
+  text-align: left;
+}
+
+/* line 36, ../../../sass/sass/include/common/wysiwyg.scss */
+.text-align-right {
+  text-align: right;
+}
+@media (max-width: 1199px) {
+  /* line 36, ../../../sass/sass/include/common/wysiwyg.scss */
+  .text-align-right {
+    text-align: center;
+  }
+}
+
+/* line 42, ../../../sass/sass/include/common/wysiwyg.scss */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 45, ../../../sass/sass/include/common/wysiwyg.scss */
+.text-align-justify {
+  text-align: justify;
+}

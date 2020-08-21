@@ -3,7 +3,7 @@ smtp_host: SSL0.OVH.NET
 smtp_hostbackup: ''
 smtp_port: '587'
 smtp_protocol: standard
-smtp_username: contact@magic-project.net
+smtp_username: postmaster@magic-project.net
 smtp_password: magicproject456
 smtp_from: ''
 smtp_fromname: ''

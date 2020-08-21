@@ -1,1 +1,292 @@
-.menu .menu_logo{position:absolute;max-width:130px;top:50%;right:60px;transform:translateY(-50%)}.menu__burger{width:40px;height:30px;position:absolute;top:10px;right:10px;z-index:999}.menu__burger .burger{width:40px;height:4px;background-color:black;position:absolute;border-radius:2px;transition:all 300ms}.menu__burger .burger:first-child{top:0}.menu__burger .burger:nth-child(2){top:50%;left:0;transform:translateY(-50%)}.menu__burger .burger:last-child{bottom:0}.menu__burger.active .burger{background-color:red}.menu__burger.active .burger:first-child{transform:rotate(45deg);top:13px}.menu__burger.active .burger:nth-child(2){width:0;left:50%}.menu__burger.active .burger:last-child{transform:rotate(-45deg);bottom:13px}.menu__main{margin-bottom:30px}.menu__main .menu__menu{display:inline-block;padding:0;margin:0 0 80px 0;list-style:none}.menu__main .menu__menu li{float:left;background-color:white;transition:all 300ms;border:1px solid black;box-sizing:border-box;border-right:none}.menu__main .menu__menu li:last-child{border-right:1px solid black}.menu__main .menu__menu li:hover{background-color:#b50000}.menu__main .menu__menu li:hover>a{color:white;text-decoration:none}.menu__main .menu__menu li:hover div>span{color:white;text-decoration:none}.menu__main .menu__menu li a,.menu__main .menu__menu li span{line-height:30px;padding:0 10px;color:black;cursor:pointer;display:block;width:100%}.menu__main .menu__menu li.active{background-color:#b50000}.menu__main .menu__menu li.active a{color:white;text-decoration:none}.menu__main .menu__menu li.active div>span{color:white;text-decoration:none}.menu__main .menu__menu li.active div>span+ul li a{color:black}.menu__main .menu__menu li.active div>span+ul li:hover a{color:white}.menu__main .menu__menu li.active div>span+ul .active a{color:white}@media (max-width: 1199px){.menu__main .menu__menu{margin:25px 0}.menu__main .menu__menu li{float:none;font-size:20px;font-weight:bold;background:transparent;border-right:1px solid black;border-bottom:none}.menu__main .menu__menu li:last-child{border-bottom:1px solid black}.menu__main .menu__menu li a,.menu__main .menu__menu li span{color:black}.menu__main .menu__menu li:hover{background-color:transparent}.menu__main .menu__menu li:hover a,.menu__main .menu__menu li:hover span{color:black}.menu__main .menu__menu li.active{background-color:transparent;border-left:4px solid #b50000}.menu__main .menu__menu li.active a,.menu__main .menu__menu li.active span{color:black}}.menu__main .sub_menu{position:relative}.menu__main .sub_menu.active{display:block;border:none}.menu__main .sub_menu.active .sub_menu__menu{display:block}@media (max-width: 1199px){.menu__main .sub_menu.active .sub_menu__menu{padding-bottom:0}}.menu__main .sub_menu__menu{display:none;position:absolute;bottom:100%;padding-bottom:15px;left:50%;transform:translateX(-50%);overflow:hidden}.menu__main .sub_menu__menu li{float:none;border-right:1px solid black;border-bottom:none}@media (max-width: 1199px){.menu__main .sub_menu__menu li{border:none}}.menu__main .sub_menu__menu li:last-child{border-bottom:1px solid black}@media (max-width: 1199px){.menu__main .sub_menu__menu li:last-child{border:none}}.menu__main .sub_menu__menu:after{content:'';display:block;position:absolute;bottom:10px;left:calc(50% - 10px);width:20px;height:20px;transform:rotate(-45deg);background-color:black;z-index:-1}@media (max-width: 1199px){.menu__main .sub_menu__menu{bottom:auto;padding-bottom:0;transform:translateX(0);position:inherit;top:100%;left:0;padding-left:20px}.menu__main .sub_menu__menu:after{display:none}}@media (max-width: 1199px){.menu__main .sub_menu__link{color:black}}@media (max-width: 1199px){.menu{position:absolute;top:0;padding-top:50px;background:white;width:100%;display:none;box-shadow:0 0 20px 0 #b50000}}
+/* line 6, ../../../sass/sass/include/menu/menu.scss */
+.menu .menu_logo {
+  position: absolute;
+  max-width: 130px;
+  top: 50%;
+  right: 60px;
+  transform: translateY(-50%);
+}
+/* line 14, ../../../sass/sass/include/menu/menu.scss */
+.menu__burger {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+/* line 21, ../../../sass/sass/include/menu/menu.scss */
+.menu__burger .burger {
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  border-radius: 2px;
+  transition: all 300ms;
+}
+/* line 28, ../../../sass/sass/include/menu/menu.scss */
+.menu__burger .burger:first-child {
+  top: 0;
+}
+/* line 31, ../../../sass/sass/include/menu/menu.scss */
+.menu__burger .burger:nth-child(2) {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+/* line 36, ../../../sass/sass/include/menu/menu.scss */
+.menu__burger .burger:last-child {
+  bottom: 0;
+}
+/* line 41, ../../../sass/sass/include/menu/menu.scss */
+.menu__burger.active .burger {
+  background-color: red;
+}
+/* line 43, ../../../sass/sass/include/menu/menu.scss */
+.menu__burger.active .burger:first-child {
+  transform: rotate(45deg);
+  top: 13px;
+}
+/* line 47, ../../../sass/sass/include/menu/menu.scss */
+.menu__burger.active .burger:nth-child(2) {
+  width: 0;
+  left: 50%;
+}
+/* line 51, ../../../sass/sass/include/menu/menu.scss */
+.menu__burger.active .burger:last-child {
+  transform: rotate(-45deg);
+  bottom: 13px;
+}
+/* line 59, ../../../sass/sass/include/menu/menu.scss */
+.menu__main {
+  margin-bottom: 30px;
+  z-index: 1;
+}
+/* line 63, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu {
+  display: inline-block;
+  padding: 0;
+  margin: 0 0 80px 0;
+  list-style: none;
+}
+/* line 68, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li {
+  float: left;
+  background-color: white;
+  transition: all 300ms;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-right: none;
+}
+/* line 75, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li:last-child {
+  border-right: 1px solid black;
+}
+/* line 78, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li:hover {
+  background-color: #b50000;
+}
+/* line 80, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li:hover > a {
+  color: white;
+  background-color: #b50000;
+  text-decoration: none;
+}
+/* line 85, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li:hover div > span {
+  text-decoration: none;
+}
+@media (min-width: 1200px) {
+  /* line 85, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li:hover div > span {
+    color: white;
+  }
+}
+/* line 94, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li a, .menu__main .menu__menu li span {
+  line-height: 30px;
+  padding: 0 10px;
+  color: black;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+}
+/* line 102, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li.active {
+  background-color: #b50000;
+}
+/* line 104, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li.active a {
+  color: white;
+  text-decoration: none;
+}
+/* line 108, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li.active div > span {
+  text-decoration: none;
+}
+@media (min-width: 1200px) {
+  /* line 108, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li.active div > span {
+    color: white;
+  }
+}
+/* line 114, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li.active div > span + ul li a {
+  color: black;
+}
+/* line 117, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .menu__menu li.active div > span + ul li:hover a {
+  background-color: #b50000;
+}
+@media (min-width: 1200px) {
+  /* line 117, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li.active div > span + ul li:hover a {
+    color: white;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 124, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li.active div > span + ul .active a {
+    color: white;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 63, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu {
+    margin: 25px 0;
+  }
+  /* line 135, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li {
+    float: none;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    border-right: 1px solid black;
+    border-bottom: none;
+  }
+  /* line 142, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li:last-child {
+    border-bottom: 1px solid black;
+  }
+  /* line 145, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li a, .menu__main .menu__menu li span {
+    color: black;
+  }
+  /* line 148, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li:hover {
+    background-color: transparent;
+  }
+  /* line 150, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li:hover a, .menu__main .menu__menu li:hover span {
+    color: black;
+  }
+  /* line 154, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li.active {
+    background-color: transparent;
+    border-left: 4px solid #b50000;
+  }
+  /* line 157, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .menu__menu li.active a, .menu__main .menu__menu li.active span {
+    color: black;
+  }
+}
+/* line 165, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .sub_menu {
+  position: relative;
+}
+/* line 167, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .sub_menu.active {
+  display: block;
+  border: none;
+}
+/* line 170, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .sub_menu.active .sub_menu__menu {
+  display: block;
+}
+@media (max-width: 1199px) {
+  /* line 170, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .sub_menu.active .sub_menu__menu {
+    padding-bottom: 0;
+  }
+}
+/* line 177, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .sub_menu__menu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  padding-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+/* line 186, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .sub_menu__menu li {
+  float: none;
+  border-right: 1px solid black;
+  border-bottom: none;
+}
+@media (max-width: 1199px) {
+  /* line 186, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .sub_menu__menu li {
+    border: none;
+  }
+}
+/* line 193, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .sub_menu__menu li:last-child {
+  border-bottom: 1px solid black;
+}
+@media (max-width: 1199px) {
+  /* line 193, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .sub_menu__menu li:last-child {
+    border: none;
+  }
+}
+/* line 200, ../../../sass/sass/include/menu/menu.scss */
+.menu__main .sub_menu__menu:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 20px;
+  transform: rotate(-45deg);
+  background-color: black;
+  z-index: -1;
+}
+@media (max-width: 1199px) {
+  /* line 177, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .sub_menu__menu {
+    bottom: auto;
+    padding-bottom: 0;
+    transform: translateX(0);
+    position: inherit;
+    top: 100%;
+    left: 0;
+    padding-left: 20px;
+  }
+  /* line 220, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .sub_menu__menu:after {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 225, ../../../sass/sass/include/menu/menu.scss */
+  .menu__main .sub_menu__link {
+    color: black;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 4, ../../../sass/sass/include/menu/menu.scss */
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    background: white;
+    width: 100%;
+    display: none;
+    box-shadow: 0 0 20px 0 #b50000;
+  }
+}

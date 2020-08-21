@@ -1,1 +1,6 @@
-.text_image__image img{width:100%;max-width:100%;height:auto}
+/* line 3, ../../../sass/sass/include/page/text_image.scss */
+.text_image__image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}

@@ -22,6 +22,8 @@ permissions:
   - 'administer content types'
   - 'administer menu'
   - 'administer nodes'
+  - 'administer redirect settings'
+  - 'administer redirects'
   - 'administer shortcuts'
   - 'administer smtp module'
   - 'administer url aliases'
